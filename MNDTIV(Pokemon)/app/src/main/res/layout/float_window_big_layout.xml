@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/white_layout">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/big_window_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#01ffffff"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1.22"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_big_name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#bd0508"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/search_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/blue_button"
+                android:text="@string/select_name"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skill1"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_big_skill1"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#bd0508"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_big_search_skill1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/blue_button"
+                android:text="@string/select_skill"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skill2"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_big_skill2"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#bd0508"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_big_search_skill2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/blue_button"
+                android:text="@string/select_skill"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/player_level"
+                android:textColor="@color/gray"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/view_big_player_level"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#bd0508"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_big_player_level_less"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_button"
+                android:text="-"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekBar_big_player_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="0.98"
+                android:background="@drawable/pink_seek" />
+
+            <Button
+                android:id="@+id/btn_big_player_level_add"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_button"
+                android:text="+"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/mob_level"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_big_mob_level"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#bd0508"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_big_mob_level_less"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_button"
+                android:text="-"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekBar_big_mob_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="0.98"
+                android:background="@drawable/pink_seek" />
+
+            <Button
+                android:id="@+id/btn_big_mob_level_add"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_button"
+                android:text="+"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/cp"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_big_cp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#bd0508"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/range"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_big_cp_range"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:text="10 ~ 10"
+                android:textColor="#bd0508"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_big_cp_less"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_button"
+                android:text="-"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekBar_big_cp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="0.98"
+                android:background="@drawable/pink_seek" />
+
+            <Button
+                android:id="@+id/btn_big_cp_add"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_button"
+                android:text="+"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/hp"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_big_hp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#bd0508"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/range"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_big_hp_range"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:text="10 ~ 10"
+                android:textColor="#bd0508"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_big_hp_less"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_button"
+                android:text="-"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekBar_big_hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="0.98"
+                android:background="@drawable/pink_seek" />
+
+            <Button
+                android:id="@+id/btn_big_hp_add"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_button"
+                android:text="+"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/star"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_big_star"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#bd0508"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_big_star_less"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_button"
+                android:text="-"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekBar_big_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="0.98"
+                android:background="@drawable/pink_seek" />
+
+            <Button
+                android:id="@+id/btn_big_star_add"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_button"
+                android:text="+"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1.22"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appraise"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_big_appraise"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#bd0508"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_big_appraise_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/blue_button"
+                android:text="@string/select_appraise"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_big_angle_setting"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/blue_button"
+                android:backgroundTintMode="multiply"
+                android:text="@string/angle_setting"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.38"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_big_iv_view"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/blue_button"
+                android:text="@string/compute_iv"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_big_back"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/blue_button"
+                android:backgroundTintMode="multiply"
+                android:text="@string/back"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_big_stop"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/blue_button"
+                android:text="@string/stop"
+                android:textColor="#93131111"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability = "blocksDescendants"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/advertising_key"></com.google.android.gms.ads.AdView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

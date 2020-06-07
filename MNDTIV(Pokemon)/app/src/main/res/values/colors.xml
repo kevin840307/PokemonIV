@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e60c79</color>
+    <color name="colorPrimaryDark">#890b74ed</color>
+    <color name="colorAccent">#a0ff4081</color>
+    <color name="gray">#98040102</color>
+    <color name="custom_theme_color">#00d7e1e8</color>
+    <color name="transparent_pink">#b4f70a75</color>
+
+    <color name="save_color">#ef171a1c</color>
+</resources>

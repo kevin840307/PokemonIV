@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_pokemon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00f5ecec"
+    android:orientation="vertical">
+
+    <SearchView
+        android:id="@+id/search_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#f7f306"></SearchView>
+
+    <ListView
+        android:id="@+id/list_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_alignLeft="@+id/searchView1"
+        android:layout_below="@+id/searchView1"
+        android:layout_marginTop="0dp"
+        android:background="@color/transparent_pink"></ListView>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_pink">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/advertising_key"></com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+</LinearLayout>
